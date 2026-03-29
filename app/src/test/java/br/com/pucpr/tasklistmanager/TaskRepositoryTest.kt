@@ -130,7 +130,7 @@ class TaskRepositoryTest {
     }
 
     @Test
-    fun `getAllFinishedTasks returns list of flow containing all not finished tasks`() = runTest {
+    fun `getAllNotFinishedTasks returns list of flow containing all not finished tasks`() = runTest {
         val taskList = listOf(
             TaskEntity(1, "Teste 1", "Desc 1", false),
             TaskEntity(2, "Teste 2", "Desc 2", false),
